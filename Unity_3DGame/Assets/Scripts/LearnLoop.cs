@@ -1,25 +1,39 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace BING
 {
     /// <summary>
-    /// »{ÃÑ°j°é:­«½Æ°õ¦æµ{¦¡
-    /// for¡Bwhile¡Bdo while¡Bforeach
+    /// èªè­˜è¿´åœˆ:é‡è¤‡åŸ·è¡Œç¨‹å¼
+    /// forã€whileã€do whileã€foreach
     /// </summary>
     public class LearnLoop : MonoBehaviour
     {
         private void Awake()
         {
-            // for °j°é»yªk:
-            // for (ªì©l­È¡F¥¬ªL­È ±ø¥ó¡F°j°éµ²§ô°õ¦æ°Ï°ì){ µ{¦¡°Ï¶ô }
+            // for è¿´åœˆèªæ³•:
+            // for (åˆå§‹å€¼ï¼›å¸ƒæ—å€¼ æ¢ä»¶ï¼›è¿´åœˆçµæŸåŸ·è¡Œå€åŸŸ){ ç¨‹å¼å€å¡Š }
             for (int i = 0; i < 10; i++) 
             {
-                print("for °j°é¤º®e:" + i);
+                print("for è¿´åœˆå…§å®¹:" + i);
             }
 
             for (int number = 0; number < 5; number++) 
             {
-                print("°j°é:" + number);
+                print("è¿´åœˆ:" + number);
+            }
+
+            if (true) 
+            {
+                print("åˆ¤æ–·å¼");
+            }
+
+            int count = 0;
+
+            while (count < 5) 
+            {
+                print("() å…§çš„å¸ƒæ—å€¼ç‚º true å°±æœƒæŒçºŒåŸ·è¡Œã€‚");
+                print("while è¿´åœˆæ•¸å­—:" + count);
+                count++;
             }
         }
     }
